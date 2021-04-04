@@ -65,7 +65,7 @@ function draw() {
     
   }
    // 모음으로 만든 패턴 
-  for (line_startY = windowHeight / 2 + 10 ; line_startY < windowHeight / 2 + 230 ; line_startY += 20) {
+  for (line_startY = windowHeight / 2 + 10 ; line_startY < windowHeight - 10 ; line_startY += 20) {
     for( line_startX = windowWidth/2 ; line_startX < windowWidth ; line_startX += 10) {
       strokeWeight(2);
       line(line_startX, line_startY, line_startX, line_startY + 10);
@@ -81,9 +81,9 @@ function draw() {
   // 해와 달
   noStroke()
   fill(255,0,0)
-  ellipse(windowWidth - 100, windowHeight/4, mouseX/3, mouseX/3)
+  ellipse(windowWidth - 300, windowHeight/4, mouseX/3, mouseX/3)
   fill(255)
-  ellipse(windowWidth/4, windowHeight - 100, mouseY/3, mouseY/3)
+  ellipse(windowWidth/4, windowHeight - 300, mouseY/3, mouseY/3)
   
   
 
